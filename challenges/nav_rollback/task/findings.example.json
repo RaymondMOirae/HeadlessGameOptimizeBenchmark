@@ -1,0 +1,41 @@
+{
+  "schema": "longbench.findings.v3",
+  "findings": [
+    {
+      "rank": 1,
+      "phase": "primary",
+      "trace_tag": "diagnostic_primary",
+      "source": {"file": "src/replace_with_measured_source.cpp", "symbol": "ReplaceWithMeasuredSymbol"},
+      "root_cause": "redundant_work",
+      "evidence": [{"zone": "ReplaceWithLivePrimaryZone", "metric": "total_ms", "value": 1.0}],
+      "proposed_change": "Describe the first semantics-preserving optimization"
+    },
+    {
+      "rank": 2,
+      "phase": "state",
+      "trace_tag": "diagnostic_state",
+      "source": {"file": "src/replace_with_measured_source.cpp", "symbol": "ReplaceWithMeasuredSymbol"},
+      "root_cause": "temporal_state",
+      "evidence": [{"zone": "ReplaceWithLiveStateZone", "metric": "total_ms", "value": 1.0}],
+      "proposed_change": "Describe the second semantics-preserving optimization"
+    },
+    {
+      "rank": 3,
+      "phase": "scale",
+      "trace_tag": "diagnostic_scale",
+      "source": {"file": "src/replace_with_measured_source.cpp", "symbol": "ReplaceWithMeasuredSymbol"},
+      "root_cause": "interest_management",
+      "evidence": [{"zone": "ReplaceWithLiveScaleZone", "metric": "total_ms", "value": 1.0}],
+      "proposed_change": "Describe the third semantics-preserving optimization"
+    },
+    {
+      "rank": 4,
+      "phase": "tail",
+      "trace_tag": "diagnostic_tail",
+      "source": {"file": "src/replace_with_measured_source.cpp", "symbol": "ReplaceWithMeasuredSymbol"},
+      "root_cause": "event_churn",
+      "evidence": [{"zone": "ReplaceWithLiveTailZone", "metric": "total_ms", "value": 1.0}],
+      "proposed_change": "Describe the fourth semantics-preserving optimization"
+    }
+  ]
+}

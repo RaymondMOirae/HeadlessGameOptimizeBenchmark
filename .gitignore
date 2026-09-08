@@ -1,0 +1,21 @@
+# Generated builds and local tools
+**/build*/
+**/.tools/
+
+# Agent-generated evidence and regenerated packages
+**/artifacts/
+challenges/nav_rollback/dist/
+
+# Runtime output
+**/__pycache__/
+*.py[cod]
+*.pftrace
+*.perfetto-trace
+code_result.json
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

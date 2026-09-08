@@ -1,0 +1,27 @@
+{
+  "schema": "longbench.upload-manifest.v1",
+  "task_id": "extreme_frame_pipeline_longbench_v3",
+  "target_platform": "linux-amd64",
+  "original_logic_hash": "d5367c4725e51c316eb202da4abed994531527ef7f17d740d3f03660fd03bcc6",
+  "workspace": {
+    "file": "workspace.zip",
+    "bytes": 6437576,
+    "sha256": "b82e97567b1695ea081b466aef410fc00d3af417fcaf80b8fda23273e95c9ba8"
+  },
+  "grader": {
+    "file": "test_by_code.py",
+    "sha256": "800e6fa91cfdfec510bc39407e5ddb00d6c82f59c9e5256eb229cc6f53143304"
+  },
+  "test_files": [
+    {
+      "file": "baseline_source.zip",
+      "bytes": 22675,
+      "sha256": "692b13570958db6e467a4e262a187f730e746e18d25878e44860ddc5bdd446ce"
+    },
+    {
+      "file": "grader_config.json",
+      "bytes": 20388,
+      "sha256": "4bc6eaeb2eecc84e5e6d79cacc19a064b1999c2b82e3c36e0cd49b7ca46d249d"
+    }
+  ]
+}

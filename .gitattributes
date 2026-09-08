@@ -1,0 +1,16 @@
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.sql text eol=lf
+*.json text eol=lf
+CMakeLists.txt text eol=lf
+*.zip binary
+tools/perfetto/bin/* binary
+third_party/perfetto/perfetto.h text eol=lf
+third_party/perfetto/perfetto.cc text eol=lf
+
+# Frozen evaluator/release files are hash-addressed and must retain exact bytes.
+challenges/nav_rollback/grader/test_files/** -text
+release/linux-amd64/** -text
